@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đơn hàng</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="/admin/indexadmin.css">
+    <link rel="stylesheet" href="/admin/quanlydonhang.css">
+    <link rel="stylesheet" href="/admin/a">
+
+
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="logo">
+                            <img src="/img/banner/logooadmin.png">
+                        </span>
+                        <span class="title">HAT BOOKSTORE</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/trangchuadmin.html" >
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Bảng điều khiển</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/quanlydonhang.html" id="active">
+                        <span class="icon">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Quản lý đơn hàng</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/quanlysanpham.html">
+                        <span class="icon">
+                          <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="title">Quản lý sản phẩm</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/quanlykhachhang.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Quản lý khách hàng</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <p>CHÀO MỪNG QUẢN TRỊ CỦA HAT </p>
+                </div>
+            </div>
+
+            
+            <!-- ================ LÀM QUẢN LÝ ĐƠN HÀNG Ở ĐÂY ================= -->
+            <div class="order-management">
+                <h2>Danh sách đơn hàng</h2>
+        
+                <div class="filter-form">
+                    <label for="start-date">Từ ngày:</label>
+                    <input type="date" id="start-date">
+        
+                    <label for="end-date">Đến ngày:</label>
+                    <input type="date" id="end-date">
+        
+                    <button>Xem đơn hàng</button>
+                </div>
+        
+                <table>
+                    <thead>
+                        <tr>
+                            <td>STT</td>
+                            <td>Tên đăng nhập </td>
+                            <td>Họ và tên</td>
+                            <td>Email</td>
+                            <td>Gói</td>
+                            <td>Ngày đăng ký</td>
+                            <td>Ghi chú</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>thaihien99</td>
+                            <td>Trần Thái Hiễn</td>
+                            <td>tranthaihien02@gmail.com</td>
+                            <td id="premium">Cao cấp</td>
+                            <td>14/10/2023</td>
+                            <td>
+                                <button id="suanguoidung">Sửa</button>
+                                
+                                <button id="xoanguoidung">Khóa</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>vantuan00</td>
+                            <td>Nguyễn Văn Tuấn</td>
+                            <td>vantuan123@gmail.com</td>
+                            <td id="standard">Tiêu chuẩn</td>
+                            <td>30/09/2023</td>
+                            <td>
+                                <button id="suanguoidung">Sửa</button>
+                                <button id="xoanguoidung">Khóa</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>myhuong7749</td>
+                            <td>Lê Thị Mỹ Hương</td>
+                            <td>heoconlonton@gmail.com</td>
+                            <td id="premium">Cao cấp</td>
+                            <td>07/09/2023</td>
+                            <td>
+                                <button id="suanguoidung">Sửa</button>
+                                <button id="xoanguoidung">Khóa</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>hoasenhong404</td>
+                            <td>Hồ Kim Sen</td>
+                            <td>trongdamgidepbangsen@gmail.com</td>
+                            <td id="basic">Cơ bản</td>
+                            <td>09/08/2023</td>
+                            <td>
+                                <button id="suanguoidung">Sửa</button>
+                                <button id="xoanguoidung">Khóa</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>umboumbo11</td>
+                            <td>Lê Thị Bò</td>
+                            <td>lelananh02@gmail.com</td>
+                            <td id="basic">Cơ bản</td>
+                            <td>08/12/2023</td>
+                            <td>
+                                <button id="suanguoidung">Sửa</button>
+                                <button id="xoanguoidung">Khóa</button>
+                            </td>
+                        </tr>
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="order-details">
+                <h2>Chi tiết đơn hàng</h2>
+                <p>Thông tin chi tiết về đơn hàng sẽ được hiển thị ở đây.</p>
+            </div>
+            <div class="stats-table">
+                <h2>Bảng Thống kê Doanh thu năm 2023</h2>
+        
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Sản phẩm</th>
+                            <th>Tổng số lượng</th>
+                            <th>Bán được</th>
+                            <th>Doanh thu</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Sách Chiến tranh tiền tệ</td>
+                            <td>500</td>
+                            <td>400</td>
+                            <td>2.000.000VNĐ</td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sách Đắc nhân tâm</td>
+                            <td>750</td>
+                            <td>500</td>
+                            <td>5.000.000VNĐ</td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Truyện conan</td>
+                            <td>1000</td>
+                            <td>700</td>
+                            <td>5.550.000VNĐ</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="chart">
+                <!-- Biểu đồ cột sẽ được hiển thị ở đây -->
+                <div class="bar" style="height: 80%"></div>
+            <div class="bar" style="height: 60%"></div>
+            <div class="bar" style="height: 75%"></div>
+            </div>
+    </div>
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
